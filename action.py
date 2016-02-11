@@ -4,5 +4,6 @@ class Action(object):
 		self.voiceCommand = command
 		self.args = args
 		self.active = active
+		
 	def toJson(self):
 		return self.__dict__

@@ -5,5 +5,6 @@ import time
 
 
 com = CommandHandler()
+# Sleep a half of second for others computations
 while com.handle():
 	time.sleep(0.5)

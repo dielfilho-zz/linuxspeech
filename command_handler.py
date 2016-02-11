@@ -20,12 +20,15 @@ class CommandHandler(object):
 
 		self.actions = ActionManager().loadActions()
 
+		# Variable used for command voice control, if True the voice command is executed
 		self.canHear = True;
 
 	def callSubProcess(self, args, text):
 		try:
 			espeak.synth(text)
+			# Breaks the arguments to execute on terminal.
 			args = args.split(" ")
+			# Execute the command on terminal
 			subprocess.Popen(args)
 		except Exception as e:
 			print "Error on callSubProcess: "+str(e)
@@ -46,11 +49,13 @@ class CommandHandler(object):
 				if self.CONST_GOODBYE in voiceCommand:
 					espeak.synth("bye")
 					return False
-
 				espeak.synth("You said "+voiceCommand)
+
 				for action in self.actions:
-					if voiceCommand in action.voiceCommand:
-						self.callSubProcess(action.args, "Executing "+voiceCommand)		
+					# For each action on list of actions if voice command is found on list and he's active, he's is executed
+					if action.active:
+						if voiceCommand in action.voiceCommand:
+							self.callSubProcess(action.args, "Executing "+voiceCommand)		
 				
 
 		return True
