@@ -1,9 +1,9 @@
 # Script para reconhecimento de voz em ambiente GNU/Linux
 
-# Dependencias:
+# Depêndencias:
 	- Python 2.7 +
 	- PyAudio
-  	- SpeechRecognition 3.2.0
+  	- SpeechRecognition 3.2.0 : https://github.com/Uberi/speech_recognition
 
 # Modo de uso:
  	- Adicione uma NOVA linha no arquivo .actions
