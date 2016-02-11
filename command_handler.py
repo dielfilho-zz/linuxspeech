@@ -53,9 +53,8 @@ class CommandHandler(object):
 
 				for action in self.actions:
 					# For each action on list of actions if voice command is found on list and he's active, he's is executed
-					if action.active:
-						if voiceCommand in action.voiceCommand:
-							self.callSubProcess(action.args, "Executing "+voiceCommand)		
+					if voiceCommand in action.voiceCommand:
+						self.callSubProcess(action.args, "Executing "+voiceCommand)		
 				
 
 		return True
