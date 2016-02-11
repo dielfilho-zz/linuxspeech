@@ -15,6 +15,7 @@
 		- Turn off : Desabilita a execução das funções
 		- Turn on  : Habilita a execução das funções
 		- Goodbye  : Finaliza o script 
+	- Execute python voice_main.py no seu terminal
 	- OBS: É necessário ter acesso a internet
 
 
