@@ -1,0 +1,15 @@
+{"voiceCommand":"open chrome", "args":"google-chrome www.facebook.com www.gmail.com www.hotmail.com", "active": true}
+{"voiceCommand":"open spotify", "args":"spotify", "active": true}
+{"voiceCommand":"open downloads", "args":"nautilus /home/daniel/Downloads", "active": true}
+{"voiceCommand":"open ufc", "args":"google-chrome https://sistemas.quixada.ufc.br/sippa/", "active": true}
+{"voiceCommand":"open netflix", "args":"google-chrome www.netflix.com/browse", "active": true}
+{"voiceCommand":"open gmail", "args":"google-chrome www.gmail.com", "active": true}
+{"voiceCommand":"what's up", "args":"google-chrome https://web.whatsapp.com/", "active": true}
+{"voiceCommand":"open 2d", "args":"~/Área de Trabalho/Tibia", "active": true}
+{"voiceCommand":"open sublime", "args":"subl", "active": true}
+{"voiceCommand":"open music", "args":"vlc /home/daniel/Músicas", "active": true}
+{"voiceCommand":"open facebook", "args":"google-chrome www.facebook.com", "active": true}
+{"voiceCommand":"sound down", "args":"amixer sset 'Master' 25%-", "active": true}
+{"voiceCommand":"sound up", "args":"amixer sset 'Master' 25%+", "active": true}
+{"voiceCommand":"mute", "args":"amixer sset 'Master' mute", "active": true}
+{"voiceCommand":"unmute", "args":"amixer sset 'Master' unmute", "active": true}
